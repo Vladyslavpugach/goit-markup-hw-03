@@ -278,7 +278,15 @@ body {
 /* ====FOOTER==== */
 
 .footer {
+  min-width: 1200px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--background-color-title);
+}
+
+.logo-link {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .white-logo {
@@ -291,6 +299,7 @@ body {
 }
 
 .address {
+  display: flex;
   color: var(--primary-bg-color);
 }
 

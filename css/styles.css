@@ -18,6 +18,7 @@
   --black-color: #000000;
   --team-background: #f5f4fa;
   --color-link-footer: rgba(255, 255, 255, 0.6);
+  --hero-btn-shadow: rgba(0, 0, 0, 0.15);
 }
 
 .visually-hidden {
@@ -80,13 +81,7 @@ body {
   padding-right: 15px;
 }
 
-/* ===GENERAL=== */
-
 /* ===HEADER=== */
-
-.page-header {
-  padding-top: 25px;
-}
 
 .page-header-container {
   display: flex;
@@ -103,12 +98,16 @@ body {
 }
 
 .list {
+  padding-top: 32px;
+  padding-bottom: 32px;
   display: flex;
   align-items: center;
   column-gap: 50px;
 }
 
 .logo {
+  margin-top: 25px;
+  margin-bottom: 25px;
   margin-right: 93px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -155,20 +154,32 @@ body {
 /* ===HERO=== */
 
 .hero {
+  text-align: center;
   background-color: var(--background-color-title);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
+  margin-top: 0%;
+  margin-bottom: 0;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: var(--primary-bg-color);
+  text-align: center;
 }
 .button {
+  display: inline-block;
+  margin: 30px auto 0;
+  display: block;
+  padding: 10px 31px;
+  width: 216px 50px;
+  box-shadow: 0px 4px 4px var(--hero-btn-shadow);
+  border-radius: 4px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -182,6 +193,7 @@ body {
 /* --FEATURES-- */
 
 .feature-subtitle {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -190,13 +202,36 @@ body {
   color: var(--title-text-color);
 }
 
+.feature-list {
+  padding: 94px 0px;
+  display: flex;
+  column-gap: 30px;
+}
+
+.feature-list-item {
+  width: calc((100% - 90px) / 4);
+}
+
 .feature-text {
   line-height: 1.7;
 }
 
 /* ===What we do==== */
 
+.we-do-list {
+  display: flex;
+}
+
+.we-do {
+  padding-bottom: 94px;
+}
+
+.we-do-list {
+  column-gap: 30px;
+}
+
 .section-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -209,6 +244,8 @@ body {
 /* ====OUR TEAM==== */
 
 .team-subtitle {
+  padding-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -218,7 +255,15 @@ body {
   color: var(--title-text-color);
 }
 
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15;
+  column-gap: 30px;
+}
+
 .team-text {
+  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -226,6 +271,7 @@ body {
 }
 
 .our-team {
+  padding-top: 94px;
   background-color: var(--team-background);
 }
 

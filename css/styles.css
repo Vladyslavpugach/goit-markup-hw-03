@@ -377,3 +377,8 @@ p ul {
 }
 
 /* ===PROJECTS=== */
+
+.projects {
+  padding-top: 94px;
+  padding-bottom: 34px;
+}

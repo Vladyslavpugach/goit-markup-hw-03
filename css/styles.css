@@ -347,8 +347,6 @@ body {
 }
 
 .portfolio-title {
-  display: flex;
-  column-gap: 30px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -385,6 +383,15 @@ p ul {
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+}
+
+.footer-link {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.address {
+  color: #ffffff;
 }
 
 /* ===PROJECTS=== */

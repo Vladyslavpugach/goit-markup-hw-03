@@ -373,9 +373,10 @@ p ul {
   padding: 0%;
 }
 
-.example-list {
+.examle-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .potfolio-text {

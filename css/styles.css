@@ -19,6 +19,7 @@
   --team-background: #f5f4fa;
   --color-link-footer: rgba(255, 255, 255, 0.6);
   --hero-btn-shadow: rgba(0, 0, 0, 0.15);
+  --border-header: #ececec;
 }
 
 .visually-hidden {
@@ -84,6 +85,10 @@ body {
 }
 
 /* ===HEADER=== */
+
+.page-header {
+  border-bottom: 1px solid var(--border-header);
+}
 
 .page-header-container {
   display: flex;
@@ -321,10 +326,6 @@ body {
   margin-top: 20px;
 }
 
-.link {
-  margin-bottom: 9px;
-}
-
 /* ====PORTFOLIO==== */
 
 .portfolio-button {
@@ -335,6 +336,8 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  padding: 6px 22px;
+  border-radius: 4px;
 
   color: var(--title-text-color);
   background-color: var(--team-background);

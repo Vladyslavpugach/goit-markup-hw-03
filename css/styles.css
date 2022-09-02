@@ -33,17 +33,13 @@
   clip: rect(0 0 0 0);
 }
 
-ul {
-  list-style: none;
-}
-
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
   text-decoration: none;
   font-style: normal;
 }
@@ -54,10 +50,8 @@ h3,
 h4,
 h5,
 h6,
-p,
-ul {
-  margin: 0%;
-  padding: 0;
+p {
+  margin: 0;
 }
 
 img {
@@ -84,6 +78,11 @@ body {
   padding-right: 15px;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* ===HEADER=== */
 
 .page-header {
@@ -95,25 +94,28 @@ body {
   align-items: center;
 }
 
+.page-header-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
 .page-nav {
   display: flex;
 }
 
 .contact-list {
+  align-items: center;
+  column-gap: 50px;
   display: flex;
   margin-left: auto;
 }
-
-.list {
-  display: flex;
-  align-items: center;
-  column-gap: 50px;
-}
-
-.logo {
+.logo-header {
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
+}
+
+.logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -143,10 +145,11 @@ body {
 }
 
 .contact-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  margin-right: 50px;
 
   color: var(--primary-text-color);
 }
@@ -169,8 +172,6 @@ body {
   width: 696px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 0%;
-  margin-bottom: 0;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -185,8 +186,7 @@ body {
   display: inline-block;
   margin: 30px auto 0;
   display: block;
-  padding: 10px 31px;
-  width: 216px 50px;
+  padding: 10px 32px;
   box-shadow: 0px 4px 4px var(--hero-btn-shadow);
   border-radius: 4px;
   font-family: "Roboto", sans-serif;
@@ -209,11 +209,6 @@ body {
   text-transform: uppercase;
 
   color: var(--title-text-color);
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .feature-list {
@@ -304,7 +299,7 @@ body {
   background-color: var(--background-color-title);
 }
 
-.footer-link {
+.footer-link:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -361,23 +356,21 @@ body {
 
 .portfolio {
   display: flex;
-  margin-bottom: 55px;
+  margin-bottom: 50px;
   column-gap: 8px;
   justify-content: center;
 }
 
-h1,
-h2,
-h3,
-p ul {
-  margin: 0%;
-  padding: 0%;
-}
-
 .examle-list {
+  gap: 30px;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+}
+
+.project-caption {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .potfolio-text {
@@ -386,11 +379,6 @@ p ul {
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
-}
-
-.footer-link {
-  margin-top: 9px;
-  margin-bottom: 9px;
 }
 
 .address {
